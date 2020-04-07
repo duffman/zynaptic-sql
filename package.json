@@ -1,0 +1,49 @@
+{
+	"name": "zynaptic-sql",
+	"version": "1.0.0",
+	"description": "Dynamic SQL Query Builder, library used to compose standard SQL Query Statements",
+	"main": "build/index.js",
+	"module": "build/index.es.js",
+	"jsnext:main": "build/index.es.js",
+	"scripts": {
+		"build": "rollup -c",
+		"test": "jest --coverage",
+		"prepare": "npm run build",
+		"version": "git add -A src"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/duffman/zynaptic-sql.git"
+	},
+	"keywords": [
+		"SQL",
+		"Query",
+		"Builder",
+		"Database",
+		"MySQL"
+	],
+	"author": "Patrik Forsberg <patrik.forsberg@coldmind.com>",
+	"license": "LGPL-2.1",
+	"bugs": {
+		"url": "https://github.com/duffman/zynaptic-sql/issues"
+	},
+	"homepage": "https://github.com/duffman/zynaptic-sql#readme",
+	"files": [
+		"build"
+	],
+	"devDependencies": {
+		"@types/jest": "^25.1.4",
+		"jest": "^25.2.6",
+		"rollup": "^2.3.2",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-peer-deps-external": "^2.2.2",
+		"rollup-plugin-typescript2": "^0.27.0",
+		"ts-jest": "^25.3.0",
+		"typescript": "^3.8.3"
+	},
+	"jest": {
+		"preset": "ts-jest",
+		"testEnvironment": "node"
+	}
+}
